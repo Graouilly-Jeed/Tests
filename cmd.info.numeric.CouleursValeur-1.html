@@ -9,7 +9,7 @@ MaxVal  // Valeur > de l’unité (défaut 22)
 MinVal  // Valeur < de l’unité (défaut 15)
 -->
 <div class="tooltips cmd cmd-widget #history#" data-type="info" data-subtype="numeric" data-cmd_id="#id#" data-cmd_uid="#uid#" data-version="#version#" style="display: block;">
-	<div class="title #hide_name#">
+  	<div class="title #hide_name#">
 		<div class="name#id#"></div>
 	</div>
 	<div class="state#id#"></div>
@@ -17,7 +17,6 @@ MinVal  // Valeur < de l’unité (défaut 15)
 	<div class="title cmdStats #hide_history#">
 		<div class="Histo#id#">Min : #minHistoryValue# | Max : #maxHistoryValue# <span class="#tendance#"></span></div>      
 	</div>
-</div>
 <script>
 jeedom.cmd.update['#id#'] = function(_options){
    jeedom.cmd.displayDuration(_options.valueDate,  $('#timeCmd#uid#'));
@@ -44,3 +43,4 @@ jeedom.cmd.update['#id#']({display_value:'#state#',
                            alertLevel:'#alertLevel#'});
 
 </script>
+</div>
